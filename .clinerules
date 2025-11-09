@@ -1,0 +1,59 @@
+# CLI Development Rules
+
+This file contains guidelines for working with this project via CLI tools and AI assistants.
+
+## File Operations
+
+- Always read files before modifying them
+- Preserve existing code style and formatting
+- Use relative paths from project root when possible
+- Back up important files before major refactoring
+
+## Testing Commands
+
+- Run tests after any code changes
+- Verify output matches expected behavior
+- Test both success and failure cases
+- Check edge cases and boundary conditions
+
+## Git Workflow
+
+- Create feature branches for new work
+- Write clear, descriptive commit messages
+- Keep commits atomic and focused
+- Review changes before committing
+
+## Code Review
+
+- Check for historical accuracy in cryptographic code
+- Verify all encryption operations are reversible
+- Ensure documentation is updated with code changes
+- Look for potential bugs in rotor stepping logic
+
+## Build and Run
+
+- Test compilation before committing
+- Verify runtime behavior with sample inputs
+- Check for memory leaks or resource issues
+- Validate output formatting
+
+## Documentation
+
+- Update README when adding features
+- Document all public APIs and functions
+- Include usage examples where helpful
+- Explain historical context for cryptographic choices
+
+## Security Considerations
+
+- Note: This is educational code, not for production encryption
+- Warn users about historical cipher weaknesses
+- Don't use for protecting sensitive data
+- Clearly state educational/historical purpose
+
+## Performance
+
+- Performance is secondary to correctness and clarity
+- Optimize only after profiling identifies bottlenecks
+- Maintain readability over micro-optimizations
+- Document any performance-critical sections

@@ -1,0 +1,52 @@
+# AI Development Quirks and Guidelines
+
+This file contains specific notes and quirks about the Enigma Cipher codebase to help AI assistants understand the project better.
+
+## Project Context
+
+- This is a historical cryptography implementation of the Enigma machine
+- Focus on historical accuracy over modern cryptographic security
+- Educational purpose - demonstrates WWII-era encryption technology
+
+## Code Patterns
+
+- Rotor mechanics follow authentic Enigma machine behavior
+- Reflector ensures symmetric encryption/decryption
+- Plugboard provides additional substitution layer
+- Rotor stepping follows historical double-stepping mechanism
+
+## Important Constraints
+
+- Maintain historical fidelity in cipher implementation
+- All cryptographic operations should be reversible
+- Preserve the mechanical limitations of the original machine
+- Character set limited to A-Z (uppercase letters only)
+
+## Testing Considerations
+
+- Verify encryption/decryption symmetry
+- Test rotor turnover positions
+- Validate reflector behavior (no letter encrypts to itself)
+- Check double-stepping anomaly implementation
+
+## Documentation Style
+
+- Include historical context where relevant
+- Explain the mechanical analogy for digital operations
+- Reference historical Enigma variants when applicable
+- Provide examples of usage patterns
+
+## Common Pitfalls
+
+- Don't forget rotor position resets between messages
+- Remember the double-stepping behavior at turnover positions
+- Reflector configuration must not map any letter to itself
+- Plugboard pairs must be bidirectional
+
+## Development Priorities
+
+1. Historical accuracy
+2. Code clarity and documentation
+3. Correctness of cryptographic operations
+4. Educational value
+5. Performance (secondary concern)
